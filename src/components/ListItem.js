@@ -8,10 +8,10 @@ class ListItem extends Component {
   render(){
     const { titleStyle } = styles;
     const { id, title } = this.props.item;
-    
+
     return (
       <TouchableWithoutFeedback
-        onPress={() => this.props.selectLibrary(id)}
+        onPress={() => this.props.selectedLibrary(id)}
       >
         <View>
           <CardSection>
